@@ -54,7 +54,8 @@ def read_data(audio_feat_file, video_feat_file, label_file, affect_state, featur
 		elif feature_mode = "bimodal":
 			feat = audio_feat_video_feat
 
-		label = int(label_file[i].split(" ")[affect_state])
+		label = label_file[i].split(" ")[1:]
+		label = int(label[affect_state])
 
 		X.append(feat)
 		y.append(label)
@@ -63,19 +64,19 @@ def read_data(audio_feat_file, video_feat_file, label_file, affect_state, featur
 
 f = open("./Features/Audio_feat/train_audio.txt").readlines()
 g = open("./Features/Video_feat/train_video.txt").readlines()
-h = open(train_path+"labels.txt").readlines()
+h = open("./Annotations/train_labels.txt").readlines()
 X, y = read_data(f, g, h, affect_state, feature_mode)
 
 
 
 f = open("./Features/Audio_feat/dev_audio.txt").readlines()
 g = open("./Features/Video_feat/dev_video.txt").readlines()
-h = open(val_path+"labels.txt").readlines()
+h = open("./Annotations/dev_labels.txt").readlines()
 X_val, y_val = read_data(f, g, h, affect_state, feature_mode)
 
 f = open("./Features/Audio_feat/test_audio.txt").readlines()
 g = open("./Features/Video_feat/dev_video.txt").readlines()
-h = open(test_path+"labels.txt").readlines()
+h = open("./Annotations/test_labels.txt").readlines()
 X_test, y_test = read_data(f, g, h, affect_state, feature_mode)
 
 
