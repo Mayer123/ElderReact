@@ -10,3 +10,5 @@ Our videos are available to public use for academic research purpose. If you wou
 # Features
 Visual features are extracted using the open-source tool OpenFace. We selected frames where the faces are successfully detected. Audio features are extracted using COVAREP, with frame length of 10 milliseconds. After extracting the
 raw features for each frame, we summarize the video for both modalities by computing the mean and standard deviation for all frames and then concatenate them.
+For building the model, we only used a subset of the features. For video features, we use gaze, gaze angle, pose and other features as described in baseline.py. For audio features, we only use the first 36 dimensions of mean and standard deviation respectively. 
+
