@@ -1,4 +1,6 @@
-# ElderReact
+# ElderReact: A Multimodal Dataset for Recognizing Emotional Response in Aging Adults
+This repository contains annotations and features for the paper "ElderReact: A Multimodal Dataset for Recognizing Emotional Response in Aging Adults". See full paper [here](https://dl.acm.org/doi/10.1145/3340555.3353747)
+
 ElderReact is a multimodal dataset for studying elders' emtional response. It contains 1,323 video clips of 46 individuals in total in which 26 are female and 20 are male. For each of the video clips, 6 basic emotions (Anger, Disgust, Fear, Happiness, Sadness, Surprise) and valence are annotated. For more information about the dataset, please refer to the paper: ElderReact: A Multimodal Dataset for Recognizing Emotional Response in Aging Adults. 
 
 # Annotations
