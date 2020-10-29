@@ -14,3 +14,23 @@ Visual features are extracted using the open-source tool OpenFace. We selected f
 raw features for each frame, we summarize the video for both modalities by computing the mean and standard deviation for all frames and then concatenate them.
 For building the model, we only used a subset of the features. For video features, we use gaze, gaze angle, pose and other features as described in baseline.py. For audio features, we only use the first 36 dimensions of mean and standard deviation respectively. 
 
+
+## Cite 
+```
+@inproceedings{10.1145/3340555.3353747,
+author = {Ma, Kaixin and Wang, Xinyu and Yang, Xinru and Zhang, Mingtong and Girard, Jeffrey M and Morency, Louis-Philippe},
+title = {ElderReact: A Multimodal Dataset for Recognizing Emotional Response in Aging Adults},
+year = {2019},
+isbn = {9781450368605},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3340555.3353747},
+doi = {10.1145/3340555.3353747},
+booktitle = {2019 International Conference on Multimodal Interaction},
+pages = {349–357},
+numpages = {9},
+keywords = {Emotion Recognition, elders, nonverbal behavior analysis},
+location = {Suzhou, China},
+series = {ICMI '19}
+}
+```
